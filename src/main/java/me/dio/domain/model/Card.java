@@ -14,10 +14,10 @@ public class Card {
     @Column(unique = true)
     private String number;
 
-    @Column(name = "available_limit", scale = 13, precision = 2)
+    @Column(name = "available_limit", scale = 2, precision = 12)
     private BigDecimal limit;
 
-    @Column(scale = 13, precision = 2)
+    @Column(scale = 2, precision = 13)
     public Long getId() {
         return id;
     }
